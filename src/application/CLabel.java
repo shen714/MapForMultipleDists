@@ -7,20 +7,11 @@ import javafx.scene.control.Label;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.Paint;
 
-/**
- * Label which has an object property associated with it
- *
- * @author UCSD MOOC development team
- *
- * @param <T> Type of object associated with label
- */
-
 public class CLabel<T> extends Label {
 	private ObjectProperty<T> item = new SimpleObjectProperty<T>(this, "item");
     private static final Paint RED = Color.web("#9E092F");
     private static final Paint GREEN = Color.web("#099E78");
 
-    // CONSTRUCTORS
 	public CLabel() {
 		super();
 	}
@@ -56,7 +47,6 @@ public class CLabel<T> extends Label {
 			setTextFill(GREEN);
 		}
 		else {
-			// TODO -- could change this to be more generic
 			setText("Choose Point");
 			setTextFill(RED);
 		}
