@@ -9,10 +9,7 @@ import util.GraphLoader;
 
 /**
  * Class to wrap the graph, current .map file map, and 
- * other pertinent information about the map data sets
- *
- * @author UCSD MOOC development team
- *
+ * other pertinent information about the map data set.
  */
 public class DataSet {
 	String filePath;
@@ -58,7 +55,6 @@ public class DataSet {
         graph = new roadgraph.MapGraph();
         roads = new HashMap<geography.GeographicPoint, HashSet<geography.RoadSegment>>();
         intersections = new HashSet<GeographicPoint>();
-        //TODO: change to use intersections for points in graph.
     	GraphLoader.loadRoadMap(filePath, graph, roads, intersections);
     }
 
