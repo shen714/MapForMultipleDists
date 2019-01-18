@@ -1,7 +1,5 @@
 /** Small class to store a GeographicPoint
  *  as a label
- * @author UCSD MOOC development team
- *
  */
 
 package application;
