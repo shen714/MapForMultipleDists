@@ -1,6 +1,4 @@
 /** Class to manage items selected in the GUI
- * 
- * @author UCSD MOOC development team
  *
  */
 
@@ -51,7 +49,6 @@ public class SelectManager {
 
     public void setMarkerManager(MarkerManager manager) { this.markerManager = manager; }
     public void setPoint(GeographicPoint point, Marker marker) {
-        // System.out.println("inSetPoint.. passed : " + point);
     	pointLabel.setItem(point);
         selectedMarker = marker;
     }
